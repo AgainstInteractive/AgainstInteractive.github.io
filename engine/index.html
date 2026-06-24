@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<title>Against Interactive Engine</title>
+</head>
+<body>
+  <div class="start">
+    <h1>Welcome to Against Interactive Engine page!!!</h1>
+    </div>
+ <div class="s1">
+  <h2>Against Interactive Engine is easy to program and use.</h2>
+  <button onclick="readMore()" class="readMoreclass">Read More!</button>
+  <p class="readmorep" id=readMorep style="display:none;">Against Interactive Engine is made by "Against Interactive" to make game development easier, but sadly its not available. As its still Work In Progress... <button onclick="done()" class="donereading">I'm Done Reading</button></p>
+  </div>   
+  <div class="legalNotice">
+    <h6>When downloading Against Interactive Engine you agree to the <a href="/tos">Terms Of Service</a></h6>
+  </div>
+  <style>
+    .start{
+      text-align: center;
+    }
+    .s1{
+   text-align: center;
+   align-items: center;
+    }
+    .readMoreclass, .donereading{
+       color: #ffffff;
+        padding: 10px 16px;
+    transition: transform 0.25s ease, background 0.25s ease;-
+    align-items: flex-start;
+    background: black;
+    }
+    .readMoreclass:hover, .donereading:hover{
+transform: scale(1.35);
+    background: #ffffff;
+    padding: 10px 16px;
+  color: black;
+    }
+    .readmorep{
+      border: 5px solid #000000;
+      border-radius: 50px;
+      max-width: 1002px;
+      max-height: 9999px;
+      align-items: center;
+    }
+  </style>
+  <script>
+    function readMore(){
+       document.getElementById("readMorep").style.display = "block";
+    }
+    function done(){
+      document.getElementById("readMorep").style.display = "none";
+    }
+  </script>
+</body>
+</html>
