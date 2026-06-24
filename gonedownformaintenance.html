@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang=en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The site has gone down to maintenance!</title>
+</head>
+  <body>
+    <p id="maintenanceBanner" class="banner">The site has gone down to maintenance! Until [time set by the devs until it will be down] Sorry for the inconvinience <button onclick="readIt()" class="xbutton">X</button></p>
+    <script>
+      function readIt() {
+document.getElementById("maintenanceBanner").style.display = "none";
+      }
+    </script>
+    <style>
+      .banner{
+  text-align: center;
+        background: red;
+        border: 2px;
+        border-radius: 15px;
+        font-size: 17px;
+        font-size: verdana;
+      }
+      .xbutton{
+        background: red;
+        border: red;
+        padding: 15px;
+        font-size: 20px;
+        gap: 12px;
+      }
+    </style>
+  </body>
