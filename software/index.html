@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<title>Software - Against Interactive</title>
+  </head>
+  <body>
+    <div class="s1"> 
+       <img src="/assets/images/logo.png">
+      <h1>Welcome to Against Interactive software!</h1>
+      <h2>Against Interactive software is brought to make life easier</h2>
+      <button onclick="showaboutScripx()" class="description">Scripx</button>
+    </div>
+    <p class="moreInfoclass" id="moreInfo" style="display:none;">Scripx is a free tool made by "Against Interactive" for removing cookies, as its simple to use and other...<button onclick="stopShowing()" class="dbutton">I'm Done Reading</button></p>
+  <div class="back">
+    <a href="/"><button class="backBtn">Back</button></a>
+  </div>
+  <style>
+.s1{
+text-align: center;
+}
+.description, .backBtn, .dbutton{
+   color: #ffffff;
+        padding: 10px 16px;
+    transition: transform 0.25s ease, background 0.25s ease;-
+    align-items: flex-start;
+    background: black;
+
+}
+.description:hover, .backBtn:hover{
+  transform: scale(1.35);
+    background: #ffffff;
+    padding: 10px 16px;
+  color: black;
+}
+.moreInfoclass{
+  text-align: center;
+  font-size: 25px;
+}
+  </style>
+  <script>
+    function showaboutScripx() {
+      document.getElementById("moreInfo").style.display = "block";
+    }
+    function stopShowing() {
+      document.getElementById("moreInfo").style.display = "none";
+    }
+  </script>
+  </body>
+</html>
