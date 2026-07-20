@@ -1,4 +1,4 @@
-import './_content.js';
+
 function showSecret(){welcomeText.style.display = 'block';}
 const welcomeText = document.createElement("p")
 const familyName1 = "Jānis"
